@@ -1,0 +1,31 @@
+// ===============  UTILS =============
+
+@import '../sass/utils/variables';
+@import '../sass/utils/visualy-hidden';
+
+// ================== BASE ===============
+
+@import '../sass/base/base';
+@import '../sass/base/container';
+
+// ============== COMPONENTS =========
+
+@import '../sass/components/modal-btn';
+@import '../sass/components/navigation';
+@import '../sass/components/social-list';
+@import '../sass/components/subscribe';
+@import '../sass/components/backdrop';
+@import '../sass/components/modal-window';
+@import '../sass/components/modal-form';
+
+// ============ LAYOUT ============
+
+@import '../sass/layout/header';
+@import '../sass/layout/hero';
+@import '../sass/layout/advantages';
+@import '../sass/layout/our-work';
+@import '../sass/layout/our-team';
+@import '../sass/layout/clients';
+@import '../sass/layout/footer';
+@import '../sass/layout/portfolio-filter';
+@import '../sass/layout/portfolio';

@@ -1,0 +1,81 @@
+.hero__button {
+  min-width: 200px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  padding: 10px 30px;
+
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: center;
+  border-style: none;
+  letter-spacing: 0.06em;
+
+  color: var(--background-color2);
+
+  background: var(--focus-color);
+  border-radius: 4px;
+}
+.footer-subscribe__button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--focus-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  min-height: 50px;
+  min-width: 200px;
+  margin-left: 12px;
+  border: none;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+
+  padding: 10px 28px;
+}
+.filter-portfolio__button {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+.modal__close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: var(--focus-color);
+  }
+}
+.modal__form-button {
+  margin: 0 auto;
+  align-self: center;
+  padding: 10px 55px;
+  background: var(--focus-color);
+  color: var(--background-color2);
+  border: 0px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 187%;
+  text-align: center;
+  letter-spacing: 0.06em;
+}

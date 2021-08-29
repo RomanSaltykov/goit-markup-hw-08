@@ -1,0 +1,124 @@
+.modal__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__form-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 3%;
+  color: var(--main-font-color);
+  margin-bottom: 12px;
+  letter-spacing: 0.03em;
+}
+
+.modal__form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  box-sizing: border-box;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus {
+    border-color: var(--focus-color);
+  }
+  &:focus + .modal__form-icon {
+    fill: var(--focus-color);
+  }
+}
+
+.modal__label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--secondary-font-color);
+  margin-bottom: 4px;
+}
+
+.modal__form-massage {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  padding: 12px 16px;
+  box-sizing: border-box;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 20px;
+  &:focus {
+    border-color: var(--focus-color);
+  }
+
+  &::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 0.8;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.modal__form-icon {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__input-wrapper {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.modal__check-desk {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.03em;
+  color: var(--secondary-font-color);
+  cursor: pointer;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Chrome/Safari/Opera */
+  -khtml-user-select: none; /* Konqueror */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+  margin-bottom: 4px;
+  .modal__form-term:checked + &::before {
+    width: 16px;
+    height: 15px;
+    border: 1px solid var(--focus-color);
+    border-radius: 2px;
+    background-color: var(--focus-color);
+    background-repeat: no-repeat;
+    background-image: url('../icomoon/SVG/checked.svg');
+    background-position: center;
+  }
+  .modal__form-term:focus + &::before {
+    box-shadow: 0 0 0 2px var(--focus-color);
+  }
+  &::before {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 15px;
+    border: 1px solid var(--main-font-color);
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-right: 8px;
+  }
+}

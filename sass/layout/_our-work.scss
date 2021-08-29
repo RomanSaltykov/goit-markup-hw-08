@@ -1,0 +1,101 @@
+.our-work__container {
+  text-align: center;
+  padding-top: var(--section-pt);
+  padding-bottom: var(--section-pb);
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.our-work {
+  background-color: var(--background-color2);
+}
+
+.our-work__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.our-work__list .item {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.our-work__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.label1 {
+  &::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    content: 'Десктопные приложения';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    border-radius: 2px;
+    margin-top: 224px;
+  }
+}
+.label2 {
+  &::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    content: 'Мобильные приложения';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    border-radius: 2px;
+    margin-top: 224px;
+  }
+}
+
+.label3 {
+  &::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    content: 'Дизайнерские решения';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    border-radius: 2px;
+    margin-top: 224px;
+  }
+}

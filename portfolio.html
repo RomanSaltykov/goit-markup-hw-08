@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title lang="en">Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <!-- Шапка сайта-->
+
+    <header class="header">
+      <div class="header__container container">
+        <nav class="navigation">
+          <a class="logo link" href="index.html" lang="en">
+            <span class="logo logo__web">Web</span>Studio</a
+          >
+          <ul class="list navigation-list">
+            <li class="navigation-list__item list item">
+              <a class="navigation-list__link link" href="index.html">Студия</a>
+            </li>
+            <li class="navigation-list__item list item">
+              <a
+                class="navigation-list__link link current s-pseudo"
+                href="portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="navigation-list__item list item">
+              <a class="navigation-list__link link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="contacts-list list">
+          <li class="contacts-list__item">
+            <a class="contacts-list__link link" href="mailto:info@devstudio.com"
+              ><svg class="contacts-list__mail-svg">
+                <use href="images/icons/sprite.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="contacts-list__item">
+            <a class="contacts-list__link link" href="tel:+380961111111"
+              ><svg class="contacts-list__phone-svg">
+                <use href="./images/icons/sprite.svg#icon-smartphone"></use></svg
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="portfolio">
+        <div class="portfolio-container container">
+          <!-- Фильтр портфолио-->
+          <h1 class="visually-hidden">Портфолио</h1>
+
+          <ul class="filter-portfolio list">
+            <li class="filter-portfolio__button">
+              <button type="button" class="filter-portfolio__filters">Все</button>
+            </li>
+            <li class="filter-portfolio__button">
+              <button type="button" class="filter-portfolio__filters">
+                Веб-сайты
+              </button>
+            </li>
+            <li class="filter-portfolio__button">
+              <button type="button" class="filter-portfolio__filters">
+                Приложения
+              </button>
+            </li>
+            <li class="filter-portfolio__button">
+              <button type="button" class="filter-portfolio__filters">Дизайн</button>
+            </li>
+            <li class="filter-portfolio__button">
+              <button type="button" class="filter-portfolio__filters">
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+
+          <!-- Портфолио-->
+
+          <ul class="portfolio-list list">
+            <li class="portfolio-list__item">
+              <a
+                class="portfolio-list__link link"
+                href="https://www.google.com.ua/?hl=ru"
+                target="_blank"
+              >
+                <div class="portfolio-list__overlay">
+                  <img
+                    src="images/portfolio/img.jpg"
+                    alt="Демонстрация веб-сайта"
+                    class="portfolio-list__image"
+                  />
+                  <p class="portfolio-list__text-overlay">
+                    Технокряк это современная площадка распространения коронавируса.
+                    Компании используют эту платформу для цифрового шпионажа и атак
+                    на защищённые сервера конкурентов.
+                  </p>
+                </div>
+                <div class="portfolio-list__wrapper">
+                  <h2 class="portfolio-list__work-name">Технокряк</h2>
+                  <p class="portfolio-list__work-type">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-list__item">
+              <a
+                class="portfolio-list__link link"
+                href="https://www.google.com.ua/?hl=ru"
+                target="_blank"
+              >
+                <div class="portfolio-list__overlay">
+                  <img
+                    src="images/portfolio/img-1.jpg"
+                    alt="Демонстрация дизайна"
+                    class="portfolio-list__image"
+                  />
+                  <p class="portfolio-list__text-overlay">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                    voluptatibus officiis modi facere voluptatum laboriosam corrupti.
+                    Nobis beatae laboriosam inventore vitae rem accusamus modi ipsum,
+                    quod, cum cumque, nemo expedita!
+                  </p>
+                </div>
+
+                <div class="portfolio-list__wrapper">
+                  <h2 class="portfolio-list__work-name">
+                    Постер New Orlean vs Goden Star
+                  </h2>
+                  <p class="portfolio-list__work-type">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-list__item">
+              <a
+                class="portfolio-list__link link"
+                href="https://www.google.com.ua/?hl=ru"
+                target="_blank"
+              >
+                <div class="portfolio-list__overlay">
+                  <img
+                    src="images/portfolio/img-2.jpg"
+                    alt="Демонстрация приложения"
+                    width="370"
+                  />
+                  <p class="portfolio-list__text-overlay">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Consectetur officiis odit maxime laboriosam fugiat placeat
+                    assumenda quisquam animi numquam, velit asperiores, eius magni
+                    perferendis doloribus cumque. Aliquam culpa atque quidem?
+                  </p>
+                </div>
+                <div class="portfolio-list__wrapper">
+                  <h2 class="portfolio-list__work-name">Ресторан Seafood</h2>
+                  <p class="portfolio-list__work-type">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-list__item">
+              <a
+                class="portfolio-list__link link"
+                href="https://www.google.com.ua/?hl=ru"
+                target="_blank"
+              >
+                <div class="portfolio-list__overlay">
+                  <img
+                    src="images/portfolio/img-3.jpg"
+                    alt="Демонстрация маркетинг"
+                    class="portfolio-list__image"
+                  />
+                  <p class="portfolio-list__text-overlay">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
+                    accusamus corrupti magnam itaque perferendis, dolores recusandae
+                    aperiam eius ea repudiandae rerum nemo excepturi autem saepe
+                    maiores labore dolorem, dolor consectetur?
+                  </p>
+                </div>
+                <div class="portfolio-list__wrapper">
+                  <h2 class="portfolio-list__work-name">Проект Prime</h2>
+                  <p class="portfolio-list__work-type">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-list__item">
+              <a
+                class="portfolio-list__link link"
+                href="https://www.google.com.ua/?hl=ru"
+                target="_blank"
+              >
+                <div class="portfolio-list__overlay">
+                  <img
+                    src="images/portfolio/img-4.jpg"
+                    alt="Демонстрация демонстрация приложения"
+                    class="portfolio-list__image"
+                  />
+                  <p class="portfolio-list__text-overlay">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
+                    accusamus corrupti magnam itaque perferendis, dolores recusandae
+                    aperiam eius ea repudiandae rerum nemo excepturi autem saepe
+                    maiores labore dolorem, dolor consectetur?
+                  </p>
+                </div>
+                <div class="portfolio-list__wrapper">
+                  <h2 class="portfolio-list__work-name">Проект Boxes</h2>
+                  <p class="portfolio-list__work-type">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-list__item">
+              <a
+                class="portfolio-list__link link"
+                href="https://www.google.com.ua/?hl=ru"
+                target="_blank"
+              >
+                <div class="portfolio-list__overlay">
+                  <img
+                    src="images/portfolio/img-5.jpg"
+                    alt="Демонстрация веб-сайта"
+                    class="portfolio-list__image"
+                  />
+                  <p class="portfolio-list__text-overlay">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
+                    accusamus corrupti magnam itaque perferendis, dolores recusandae
+                    aperiam eius ea repudiandae rerum nemo excepturi autem saepe
+                    maiores labore dolorem, dolor consectetur?
+                  </p>
+                </div>
+                <div class="portfolio-list__wrapper">
+                  <h2 class="portfolio-list__work-name">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="portfolio-list__work-type">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-list__item">
+              <a
+                class="portfolio-list__link link"
+                href="https://www.google.com.ua/?hl=ru"
+                target="_blank"
+              >
+                <div class="portfolio-list__overlay">
+                  <img
+                    src="images/portfolio/img-6.jpg"
+                    alt="Демонстрация дизайна"
+                    class="portfolio-list__image"
+                  />
+                  <p class="portfolio-list__text-overlay">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
+                    accusamus corrupti magnam itaque perferendis, dolores recusandae
+                    aperiam eius ea repudiandae rerum nemo excepturi autem saepe
+                    maiores labore dolorem, dolor consectetur?
+                  </p>
+                </div>
+                <div class="portfolio-list__wrapper">
+                  <h2 class="portfolio-list__work-name">Издание Limited Edition</h2>
+                  <p class="portfolio-list__work-type">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-list__item">
+              <a
+                class="portfolio-list__link link"
+                href="https://www.google.com.ua/?hl=ru"
+                target="_blank"
+              >
+                <div class="portfolio-list__overlay">
+                  <img
+                    src="images/portfolio/img-7.jpg"
+                    alt="Демонстрация маркетинг"
+                    class="portfolio-list__image"
+                  />
+                  <p class="portfolio-list__text-overlay">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
+                    accusamus corrupti magnam itaque perferendis, dolores recusandae
+                    aperiam eius ea repudiandae rerum nemo excepturi autem saepe
+                    maiores labore dolorem, dolor consectetur?
+                  </p>
+                </div>
+                <div class="portfolio-list__wrapper">
+                  <h2 class="portfolio-list__work-name">Проект LAB</h2>
+                  <p class="portfolio-list__work-type">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-list__item">
+              <a
+                class="portfolio-list__link link"
+                href="https://www.google.com.ua/?hl=ru"
+                target="_blank"
+              >
+                <div class="portfolio-list__overlay">
+                  <img
+                    src="images/portfolio/img-8.jpg"
+                    alt="Демонстрация приложения"
+                    class="portfolio-list__image"
+                  />
+                  <p class="portfolio-list__text-overlay">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
+                    accusamus corrupti magnam itaque perferendis, dolores recusandae
+                    aperiam eius ea repudiandae rerum nemo excepturi autem saepe
+                    maiores labore dolorem, dolor consectetur?
+                  </p>
+                </div>
+                <div class="portfolio-list__wrapper">
+                  <h2 class="portfolio-list__work-name">Growing Business</h2>
+                  <p class="portfolio-list__work-type">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- Футер -->
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__address-container">
+          <h3 class="footer__title visually-hidden">Контактные данные</h3>
+          <a class="logo link logo-footer" href="index.html">
+            <span class="logo logo__web">Web</span>Studio</a
+          >
+          <address class="address">
+            <ul class="address__list list">
+              <li class="address__item list">
+                <a
+                  class="link address__street"
+                  href="https://goo.gl/maps/oHU4YcyeSBR1wk3o7"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >г. Киев, пр-т Леси Украинки,26</a
+                >
+              </li>
+              <li class="address__item list">
+                <a class="link address__f-cont" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="address__item list">
+                <a class="link address__f-cont" href="tel:+380991111111"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="social-container">
+          <h3 class="social-container__title">присоединяйтесь</h3>
+          <ul class="social-container__list list">
+            <li class="social-container__item">
+              <a href="" class="social-container__link link">
+                <svg class="social-container__icon">
+                  <use
+                    class="social-container__svg"
+                    href="./images/icons/sprite.svg#icon-instagram"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-container__item">
+              <a href="" class="social-container__link link">
+                <svg class="social-container__icon">
+                  <use
+                    class="social-container__svg"
+                    href="./images/icons/sprite.svg#icon-twitter"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-container__item">
+              <a href="" class="social-container__link link">
+                <svg class="social-container__icon">
+                  <use
+                    class="social-container__svg"
+                    href="./images/icons/sprite.svg#icon-facebook"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-container__item">
+              <a href="" class="social-container__link link">
+                <svg class="social-container__icon">
+                  <use
+                    class="social-container__svg"
+                    href="./images/icons/sprite.svg#icon-linkedin"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-subscribe">
+          <form action="#" class="footer-subscribe__email">
+            <label for="footer-email" class="footer-subscribe__title"
+              >Подпишитесь на рассылку</label
+            >
+            <div class="footer-subscribe__wrapper">
+              <input
+                id="footer-email"
+                name="footer-email"
+                type="email"
+                class="footer-subscribe__email-input"
+                placeholder="E-mail"
+              />
+              <button class="footer-subscribe__button" type="submit">
+                Подписаться
+                <svg class="footer-subscribe__icon-send">
+                  <use href="./images/icons/sprite.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
